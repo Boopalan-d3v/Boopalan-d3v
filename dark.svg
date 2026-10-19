@@ -32,27 +32,19 @@
       <stop offset="100%" stop-color="#03060c"/>
     </radialGradient>
 
-    <linearGradient id="scanBeamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <!-- Sleek Laser Scanner Beam -->
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#22D3EE" stop-opacity="0.08"/>
-      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.45"/>
-      <stop offset="55%" stop-color="#22D3EE" stop-opacity="0.08"/>
+      <stop offset="20%" stop-color="#22D3EE" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#22D3EE" stop-opacity="0.7"/>
       <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Scanline Pattern -->
     <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="1" fill="#38BDF8" opacity="0.025"/>
+      <rect width="4" height="1" fill="#38BDF8" opacity="0.02"/>
     </pattern>
-
-    <!-- Glow Filter -->
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
 
     <!-- Clip Paths for Clean Borders -->
     <clipPath id="leftCardClip">
@@ -77,13 +69,15 @@
       .headline { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; font-weight: 600; fill: #38BDF8; }
       .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; fill: #94A3B8; }
       .prompt-cmd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; fill: #22D3EE; font-weight: 600; }
+      .sec-title { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #A855F7; font-weight: 700; letter-spacing: 1px; }
       .key { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: #22D3EE; font-weight: 700; letter-spacing: 0.5px; }
       .val { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: #E2E8F0; font-weight: 500; }
       .val-bold { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: #F8FAFC; font-weight: 700; }
       .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; fill: #38BDF8; font-weight: 700; letter-spacing: 0.5px; }
+      .dot { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: #475569; font-weight: 400; }
       .faint { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #475569; }
       .accent-green { fill: #10B981; font-weight: 700; }
-      .accent-violet { fill: #A855F7; font-weight: 700; }
+      .cursor { fill: #22D3EE; font-weight: 900; }
       text, tspan { white-space: pre; }
     </style>
   </defs>
@@ -194,17 +188,17 @@
       </text>
     </g>
 
-    <!-- Subtle Moving Scanline Beam over Left Card -->
+    <!-- Laser Scanning Line (Clean line, no muddy smudge) -->
     <g clip-path="url(#leftCardClip)">
-      <rect x="20" y="64" width="446" height="50" fill="url(#scanBeamGrad)" opacity="0.65" style="mix-blend-mode: screen">
-        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 480" dur="4.8s" repeatCount="indefinite"/>
-      </rect>
+      <line x1="20" y1="64" x2="466" y2="64" stroke="url(#laserGrad)" stroke-width="2">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 520" dur="5s" repeatCount="indefinite"/>
+      </line>
     </g>
 
     <!-- Identity Sub-Card at Bottom of Left Column -->
-    <rect x="34" y="490" width="418" height="86" rx="10" fill="#070D18" fill-opacity="0.75" stroke="#334155" stroke-width="1"/>
+    <rect x="34" y="492" width="418" height="84" rx="10" fill="#070D18" fill-opacity="0.75" stroke="#334155" stroke-width="1"/>
     
-    <g transform="translate(48, 510)">
+    <g transform="translate(48, 511)">
       <text class="mono prompt">~/identity $ <tspan class="prompt-cmd">whoami --verbose</tspan></text>
       <text y="18" class="mono val"><tspan class="key">&gt; NAME:</tspan> Boopalan S  <tspan class="faint">|</tspan>  <tspan class="key">EXP:</tspan> 2+ Years</text>
       <text y="36" class="mono val"><tspan class="key">&gt; ROLE:</tspan> Fullstack Software Engineer @ <tspan class="val-bold">Grassstone AI</tspan></text>
@@ -226,164 +220,92 @@
     </g>
 
     <!-- Terminal Command Execution -->
-    <g transform="translate(504, 118)">
+    <g transform="translate(504, 120)">
       <text class="mono prompt">boopalan@grassstone:~$ <tspan class="prompt-cmd">./profile.sh --status --inspect</tspan></text>
     </g>
 
     <!-- Hero Identity & Badges with Role Rotation -->
-    <g transform="translate(504, 148)">
+    <g transform="translate(504, 150)">
       <text class="mono head-name">BOOPALAN S</text>
       
       <!-- Role Badge Pill Container -->
-      <rect x="160" y="-18" width="180" height="22" rx="4" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <rect x="160" y="-18" width="186" height="24" rx="4" fill="#1E293B" stroke="#334155" stroke-width="1"/>
       
       <!-- Rotating Role Labels via SMIL -->
       <g>
-        <text x="250" y="-3" text-anchor="middle" class="mono tag" fill="#38BDF8">
+        <text x="253" y="-2" text-anchor="middle" class="mono tag" fill="#38BDF8">
           FULL STACK ENGINEER
           <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.30;0.34;0.64;0.68;0.96;1" dur="9s" repeatCount="indefinite"/>
         </text>
-        <text x="250" y="-3" text-anchor="middle" class="mono tag" fill="#10B981" opacity="0">
+        <text x="253" y="-2" text-anchor="middle" class="mono tag" fill="#10B981" opacity="0">
           BACKEND &amp; GO DEV
           <animate attributeName="opacity" values="0;0;1;1;0;0;0" keyTimes="0;0.32;0.36;0.64;0.68;0.98;1" dur="9s" repeatCount="indefinite"/>
         </text>
-        <text x="250" y="-3" text-anchor="middle" class="mono tag" fill="#A855F7" opacity="0">
+        <text x="253" y="-2" text-anchor="middle" class="mono tag" fill="#A855F7" opacity="0">
           AI WORKFLOWS DEV
           <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.64;0.68;0.96;0.98;1;1" dur="9s" repeatCount="indefinite"/>
         </text>
       </g>
 
       <!-- Exp Pill -->
-      <rect x="348" y="-18" width="102" height="22" rx="4" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <circle cx="362" cy="-7" r="3.5" fill="#10B981"/>
-      <text x="402" y="-3" text-anchor="middle" class="mono tag" fill="#10B981">2+ YRS EXP</text>
+      <rect x="356" y="-18" width="102" height="24" rx="4" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <circle cx="370" cy="-6" r="3.5" fill="#10B981"/>
+      <text x="410" y="-2" text-anchor="middle" class="mono tag" fill="#10B981">2+ YRS EXP</text>
 
       <!-- Subtitle Headline -->
-      <text y="20" class="mono headline">React.js · TypeScript · Next.js · Go · Backend APIs &amp; AI Workflows</text>
+      <text y="22" class="mono headline">React.js · TypeScript · Next.js · Go · Backend APIs &amp; AI Workflows</text>
     </g>
 
-    <!-- Section 1: Core System Telemetry (Label-Value Grid) -->
-    <g transform="translate(504, 196)">
-      <!-- Row 1: Company & Role -->
-      <text y="0" class="mono key">&gt; COMPANY     :</text>
-      <text x="120" y="0" class="mono val-bold">Grassstone AI</text>
-      <text x="236" y="0" class="mono key">&gt; ROLE :</text>
-      <text x="296" y="0" class="mono val">Fullstack Software Engineer</text>
-      <circle cx="515" cy="-4" r="3.5" fill="#10B981"/>
-      <text x="525" y="0" class="mono tag" fill="#10B981">CURRENT</text>
+    <!-- Section 1: Core System Telemetry (Uncluttered, Single-Key Per Line) -->
+    <g transform="translate(504, 204)">
+      <!-- Row 1: Role -->
+      <text y="0" class="mono"><tspan class="key">&gt; ROLE        :</tspan> <tspan class="val-bold">Fullstack Software Engineer</tspan></text>
 
-      <!-- Row 2: Location & Education -->
-      <text y="20" class="mono key">&gt; LOCATION    :</text>
-      <text x="120" y="20" class="mono val">Bangalore, Karnataka, India</text>
-      <text x="350" y="20" class="mono key">&gt; ALUMNI :</text>
-      <text x="424" y="20" class="mono val">Bharathiar University (CSE)</text>
+      <!-- Row 2: Company -->
+      <text y="20" class="mono"><tspan class="key">&gt; COMPANY     :</tspan> <tspan class="val-bold">Grassstone AI</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="#10B981">● ACTIVE / BENGALURU</tspan><tspan class="faint">]</tspan></text>
 
-      <!-- Row 3: Specialization Focus -->
-      <text y="40" class="mono key">&gt; CORE FOCUS  :</text>
-      <text x="120" y="40" class="mono val">High-Throughput Backend APIs, Microservices &amp; AI Workflows</text>
+      <!-- Row 3: Location -->
+      <text y="40" class="mono"><tspan class="key">&gt; LOCATION    :</tspan> <tspan class="val">Bangalore, Karnataka, India</tspan>  <tspan class="faint">|</tspan>  <tspan class="faint">Alumni: Bharathiar Univ (CSE)</tspan></text>
 
-      <!-- Row 4: Status -->
-      <text y="60" class="mono key">&gt; PIPELINE    :</text>
-      <text x="120" y="60" class="mono val"><tspan class="accent-green">✓</tspan> Building  •  <tspan class="accent-green">✓</tspan> Scaling  •  <tspan class="accent-green">✓</tspan> Shipping Clean Code</text>
+      <!-- Row 4: Core Focus -->
+      <text y="60" class="mono"><tspan class="key">&gt; CORE FOCUS  :</tspan> <tspan class="val">High-Throughput Backend APIs &amp; AI Document Workflows</tspan></text>
 
-      <!-- Divider -->
-      <line x1="0" y1="74" x2="636" y2="74" stroke="#1E293B" stroke-width="1"/>
+      <!-- Row 5: Pipeline Status -->
+      <text y="80" class="mono"><tspan class="key">&gt; PIPELINE    :</tspan> <tspan class="accent-green">✓</tspan> <tspan class="val">Building</tspan>  <tspan class="dot">•</tspan>  <tspan class="accent-green">✓</tspan> <tspan class="val">Scaling</tspan>  <tspan class="dot">•</tspan>  <tspan class="accent-green">✓</tspan> <tspan class="val">Shipping Clean Code</tspan></text>
     </g>
 
-    <!-- Section 2: Technical Architecture & Matrix -->
-    <g transform="translate(504, 290)">
-      <text y="0" class="mono key" fill="#A855F7">[ TECHNICAL ARCHITECTURE &amp; STACK ]</text>
+    <!-- Section 2: Technical Architecture & Stack (Natural Monospace Spacing, Zero Jitter) -->
+    <g transform="translate(504, 314)">
+      <text y="0" class="mono sec-title">[ TECHNICAL ARCHITECTURE &amp; STACK ]</text>
       
-      <!-- Tech rows with consistent columns -->
-      <text y="22" class="mono key">&gt; LANGUAGES   :</text>
-      <text x="120" y="22" class="mono val-bold">TypeScript</text>
-      <text x="210" y="22" class="mono faint">·</text>
-      <text x="226" y="22" class="mono val-bold">JavaScript</text>
-      <text x="314" y="22" class="mono faint">·</text>
-      <text x="330" y="22" class="mono val-bold">Go (Golang)</text>
-      <text x="426" y="22" class="mono faint">·</text>
-      <text x="442" y="22" class="mono val-bold">Python</text>
-      <text x="502" y="22" class="mono faint">·</text>
-      <text x="518" y="22" class="mono val">SQL</text>
+      <text y="20" class="mono"><tspan class="key">&gt; LANGUAGES   :</tspan> <tspan class="val-bold">TypeScript</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">JavaScript</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">Go (Golang)</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">Python</tspan> <tspan class="dot">·</tspan> <tspan class="val">SQL</tspan></text>
 
-      <text y="44" class="mono key">&gt; FRONTEND    :</text>
-      <text x="120" y="44" class="mono val-bold">React.js</text>
-      <text x="190" y="44" class="mono faint">·</text>
-      <text x="206" y="44" class="mono val-bold">Next.js (App Router)</text>
-      <text x="372" y="44" class="mono faint">·</text>
-      <text x="388" y="44" class="mono val">Tailwind CSS</text>
-      <text x="488" y="44" class="mono faint">·</text>
-      <text x="504" y="44" class="mono val">HTML5/CSS3</text>
+      <text y="40" class="mono"><tspan class="key">&gt; FRONTEND    :</tspan> <tspan class="val-bold">React.js</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">Next.js (App Router)</tspan> <tspan class="dot">·</tspan> <tspan class="val">Tailwind CSS</tspan> <tspan class="dot">·</tspan> <tspan class="val">HTML5</tspan></text>
 
-      <text y="66" class="mono key">&gt; BACKEND/API :</text>
-      <text x="120" y="66" class="mono val-bold">Go HTTP / Chi</text>
-      <text x="234" y="66" class="mono faint">·</text>
-      <text x="250" y="66" class="mono val-bold">Node.js</text>
-      <text x="318" y="66" class="mono faint">·</text>
-      <text x="334" y="66" class="mono val">Express.js</text>
-      <text x="420" y="66" class="mono faint">·</text>
-      <text x="436" y="66" class="mono val">REST APIs</text>
-      <text x="518" y="66" class="mono faint">·</text>
-      <text x="534" y="66" class="mono val">WebSockets</text>
+      <text y="60" class="mono"><tspan class="key">&gt; BACKEND/API :</tspan> <tspan class="val-bold">Go HTTP / Chi</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">Node.js</tspan> <tspan class="dot">·</tspan> <tspan class="val">Express</tspan> <tspan class="dot">·</tspan> <tspan class="val">REST APIs</tspan> <tspan class="dot">·</tspan> <tspan class="val">WebSockets</tspan></text>
 
-      <text y="88" class="mono key">&gt; DATA &amp; AI   :</text>
-      <text x="120" y="88" class="mono val-bold">PostgreSQL</text>
-      <text x="210" y="88" class="mono faint">·</text>
-      <text x="226" y="88" class="mono val">MongoDB</text>
-      <text x="296" y="88" class="mono faint">·</text>
-      <text x="312" y="88" class="mono val">BullMQ</text>
-      <text x="368" y="88" class="mono faint">·</text>
-      <text x="384" y="88" class="mono val-bold">GLM-OCR / Vision AI</text>
-      <text x="546" y="88" class="mono faint">·</text>
-      <text x="562" y="88" class="mono val">AWS S3</text>
+      <text y="80" class="mono"><tspan class="key">&gt; DATA &amp; AI   :</tspan> <tspan class="val-bold">PostgreSQL</tspan> <tspan class="dot">·</tspan> <tspan class="val">MongoDB</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">BullMQ</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">GLM-OCR / Vision AI</tspan> <tspan class="dot">·</tspan> <tspan class="val">AWS S3</tspan></text>
 
-      <text y="110" class="mono key">&gt; INFRA/DEVOPS:</text>
-      <text x="120" y="110" class="mono val">Docker</text>
-      <text x="180" y="110" class="mono faint">·</text>
-      <text x="196" y="110" class="mono val">Linux System</text>
-      <text x="300" y="110" class="mono faint">·</text>
-      <text x="316" y="110" class="mono val">Git &amp; GitHub Actions</text>
-      <text x="490" y="110" class="mono faint">·</text>
-      <text x="506" y="110" class="mono val">Postman CI</text>
-
-      <!-- Divider -->
-      <line x1="0" y1="124" x2="636" y2="124" stroke="#1E293B" stroke-width="1"/>
+      <text y="100" class="mono"><tspan class="key">&gt; INFRA/DEVOPS:</tspan> <tspan class="val">Docker</tspan> <tspan class="dot">·</tspan> <tspan class="val">Linux System</tspan> <tspan class="dot">·</tspan> <tspan class="val">Git &amp; GitHub Actions</tspan> <tspan class="dot">·</tspan> <tspan class="val">Postman CI</tspan></text>
     </g>
 
-    <!-- Section 3: Verified Projects & Engineering Builds -->
-    <g transform="translate(504, 434)">
-      <text y="0" class="mono key" fill="#A855F7">[ VERIFIED BUILDS &amp; SYSTEMS ]</text>
+    <!-- Section 3: Verified Projects (Balanced Alignment & Clean URLs) -->
+    <g transform="translate(504, 444)">
+      <text y="0" class="mono sec-title">[ VERIFIED BUILDS &amp; SYSTEMS ]</text>
       
-      <text y="22" class="mono key">&gt; DevBench    :</text>
-      <text x="120" y="22" class="mono val-bold">Developer workbench &amp; syntax diff checker</text>
-      <text x="448" y="22" class="mono tag" fill="#38BDF8">devbenchio.vercel.app</text>
+      <text y="20" class="mono"><tspan class="key">&gt; DevBench    :</tspan> <tspan class="val-bold">Developer syntax &amp; diff workbench</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="#38BDF8">devbenchio.vercel.app</tspan><tspan class="faint">]</tspan></text>
 
-      <text y="44" class="mono key">&gt; WindBoard   :</text>
-      <text x="120" y="44" class="mono val-bold">Real-time collaborative canvas &amp; task board</text>
-      <text x="448" y="44" class="mono tag" fill="#38BDF8">wind-board.vercel.app</text>
-
-      <!-- Divider -->
-      <line x1="0" y1="58" x2="636" y2="58" stroke="#1E293B" stroke-width="1"/>
+      <text y="40" class="mono"><tspan class="key">&gt; WindBoard   :</tspan> <tspan class="val-bold">Real-time collaborative canvas</tspan>     <tspan class="faint">[</tspan><tspan class="tag" fill="#38BDF8">wind-board.vercel.app</tspan><tspan class="faint">]</tspan></text>
     </g>
 
-    <!-- Section 4: Live Links & Interactive Terminal Prompt -->
-    <g transform="translate(504, 510)">
+    <!-- Section 4: Live Links & Interactive Terminal Prompt (Seamless Cursor) -->
+    <g transform="translate(504, 516)">
       <!-- Links Row -->
-      <text y="0" class="mono key">&gt; CONNECT     :</text>
-      <text x="120" y="0" class="mono val">boopalan-d3v.vercel.app</text>
-      <text x="296" y="0" class="mono faint">·</text>
-      <text x="312" y="0" class="mono val">github.com/Boopalan-d3v</text>
-      <text x="488" y="0" class="mono faint">·</text>
-      <text x="504" y="0" class="mono val">linkedin: boopalans01</text>
+      <text y="0" class="mono"><tspan class="key">&gt; CONNECT     :</tspan> <tspan class="val">boopalan-d3v.vercel.app</tspan> <tspan class="dot">·</tspan> <tspan class="val">github: Boopalan-d3v</tspan> <tspan class="dot">·</tspan> <tspan class="val">in: boopalans01</tspan></text>
 
-      <!-- Bottom Terminal Prompt Line with Cursor -->
+      <!-- Bottom Terminal Prompt Line with Seamless Cursor -->
       <g transform="translate(0, 24)">
-        <text class="mono prompt">boopalan@grassstone:~$ <tspan class="prompt-cmd">echo $CONTACT</tspan> <tspan class="faint">--&gt;</tspan> <tspan class="val-bold">boopalans0112@gmail.com</tspan></text>
-        
-        <!-- Animated Blinking Terminal Block Cursor placed directly after email -->
-        <rect x="466" y="-12" width="8" height="15" fill="#22D3EE">
-          <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
-        </rect>
+        <text class="mono prompt">boopalan@grassstone:~$ <tspan class="prompt-cmd">echo $CONTACT</tspan> <tspan class="faint">--&gt;</tspan> <tspan class="val-bold">boopalans0112@gmail.com</tspan><tspan class="cursor"> █<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></tspan></text>
       </g>
     </g>
   </g>
