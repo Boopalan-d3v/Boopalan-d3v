@@ -16,28 +16,14 @@
 
 ---
 
-### ⚡ `whoami --verbose`
+### ⚡ About & Focus
 
-```bash
-[boopalan@grassstone-ai:~]$ cat profile.json
-```
+Fullstack Software Engineer at **Grassstone AI** (Bangalore, India) specializing in high-throughput backend microservices, real-time web applications, and AI-powered document extraction pipelines.
 
-```json
-{
-  "name": "Boopalan S",
-  "title": "Fullstack Software Engineer",
-  "company": "Grassstone AI",
-  "location": "Bangalore, Karnataka, India",
-  "education": "B.E. Computer Science & Engineering (Bharathiar University)",
-  "specialization": [
-    "High-Concurrency Backend Microservices & REST APIs",
-    "Full-Stack Web Architecture (React, Next.js, TypeScript, Go)",
-    "AI-Powered Document Workflows & Vision Models (GLM-OCR)",
-    "Asynchronous Task Queues & Event-Driven Systems (BullMQ, Redis)"
-  ],
-  "status": "Building scalable web platforms, resilient APIs, and intelligent pipelines."
-}
-```
+- 🏗️ **Core Craft**: Architecting scalable services across React, Next.js, TypeScript, Go, and Node.js.
+- 🧠 **AI & Automation**: Engineering document schema extraction workflows using vision models (GLM-OCR) and asynchronous job orchestration with BullMQ & Redis.
+- 📐 **Architecture**: Prioritizing clean type contracts, relational data integrity (PostgreSQL), and containerized deployments with Docker and GitHub Actions.
+- 🎓 **Education**: B.E. in Computer Science & Engineering from Bharathiar University.
 
 ---
 
@@ -46,29 +32,29 @@
 | Category | Technologies & Tools |
 | :--- | :--- |
 | **Languages** | `TypeScript` · `JavaScript (ESNext)` · `Go (Golang)` · `Python` · `SQL` · `HTML5/CSS3` |
-| **Frontend UI** | `React.js` · `Next.js (App Router)` · `Tailwind CSS` · `Component Architecture` · `State Management` |
+| **Frontend UI** | `React.js` · `Next.js (App Router)` · `Tailwind CSS` · `Canvas API` · `Component Architecture` |
 | **Backend & APIs** | `Go HTTP / Chi` · `Node.js` · `Express.js` · `RESTful APIs` · `WebSockets` · `OAuth 2.0` |
-| **AI & Workflows** | `GLM-OCR` · `Vision AI Document Parsing` · `Structured JSON Compilation` · `LLM Integrations` |
+| **AI & Workflows** | `GLM-OCR` · `Vision AI Document Parsing` · `Structured JSON Compilation` · `LLM Pipelines` |
 | **Queues & Databases** | `PostgreSQL` · `MongoDB` · `MySQL` · `BullMQ` · `Redis` · `AWS S3` |
-| **DevOps & Tooling** | `Docker` · `Linux (Ubuntu/Debian)` · `Git` · `GitHub Actions CI/CD` · `Postman` |
+| **DevOps & Tooling** | `Docker` · `Linux (Ubuntu/Debian)` · `Git` · `GitHub Actions CI/CD` · `Postman CI` |
 
 ---
 
 ### 🚀 Featured Systems & Production Builds
 
 #### 🔹 [DevBench](https://devbenchio.vercel.app/) — Developer Utilities & Syntax Diff Suite
-> **Live Demo:** [devbenchio.vercel.app](https://devbenchio.vercel.app/)
-- High-efficiency developer workbench featuring real-time, line-by-line code diff checking, AST-aware transformations, and syntax inspection.
-- Built with modern Next.js and optimized client-side processing for instant visual feedback.
+> **Live Application:** [devbenchio.vercel.app](https://devbenchio.vercel.app/)
+- High-efficiency developer workbench featuring real-time, line-by-line syntax diff checking, AST-aware transformations, and live inspection.
+- Engineered for instant client-side execution and responsive dark/light developer ergonomics.
 
-#### 🔹 [WindBoard](https://wind-board.vercel.app/) — Real-Time Collaborative Whiteboard
-> **Repository:** [github.com/Boopalan-d3v/wind-board](https://github.com/Boopalan-d3v/wind-board) · **Live Demo:** [wind-board.vercel.app](https://wind-board.vercel.app/)
-- Interactive infinite canvas whiteboard and visual task management tool built with high-performance canvas rendering.
-- Features smooth vector drawing, task cards, persistent state, and keyboard shortcuts.
+#### 🔹 [WindBoard](https://wind-board.vercel.app/) — Real-Time Collaborative Canvas
+> **Repository:** [github.com/Boopalan-d3v/wind-board](https://github.com/Boopalan-d3v/wind-board) · **Live Application:** [wind-board.vercel.app](https://wind-board.vercel.app/)
+- High-performance infinite canvas whiteboard and visual workspace with fluid vector drawing and task persistence.
+- Built with optimized HTML5 canvas rendering and reactive state management.
 
 #### 🔹 AI Document & OCR Extraction Engine @ Grassstone AI
-- Production document processing pipeline extracting structured schema graphs and tabular data from complex multi-page files.
-- Orchestrated background queues using **BullMQ** with distributed workers in **Node.js** and **Go**, leveraging vision models for graph extraction.
+- Production data processing pipeline transforming complex multi-page files into structured JSON schemas.
+- Managed asynchronous distributed workers via **BullMQ**, **Node.js**, and **Go**, integrated with vision extraction models.
 
 ---
 
@@ -122,5 +108,5 @@ boopalan@grassstone:~$ echo "Let's connect and build something extraordinary."
 - ✉️ **Email**: [boopalans0112@gmail.com](mailto:boopalans0112@gmail.com)
 
 <p align="right">
-  <sub>Generated with precision · Terminal Engine v2.4</sub>
+  <sub>Terminal Profile System v2.4 · High-Performance Engineering</sub>
 </p>

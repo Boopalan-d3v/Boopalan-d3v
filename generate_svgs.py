@@ -10,7 +10,7 @@ def generate_svg(theme="dark"):
     is_dark = (theme == "dark")
     portrait_lines = load_portrait("portrait.txt")
 
-    # Dimensions
+    # Canvas Dimensions
     WIDTH = 1180
     HEIGHT = 610
 
@@ -55,7 +55,6 @@ def generate_svg(theme="dark"):
         accent_sky = "#38BDF8"
         accent_emerald = "#10B981"
         accent_violet = "#A855F7"
-        accent_amber = "#F59E0B"
         
         scanline_color = "#38BDF8"
         scanline_opacity = "0.02"
@@ -107,7 +106,6 @@ def generate_svg(theme="dark"):
         accent_sky = "#0369A1"
         accent_emerald = "#059669"
         accent_violet = "#6D28D9"
-        accent_amber = "#D97706"
         
         scanline_color = "#0F172A"
         scanline_opacity = "0.015"
@@ -261,14 +259,14 @@ def generate_svg(theme="dark"):
       </line>
     </g>
 
-    <!-- Identity Sub-Card at Bottom of Left Column -->
+    <!-- Identity Sub-Card: Architectural Philosophy (100% Unique, Zero Repetition) -->
     <rect x="34" y="492" width="418" height="84" rx="10" fill="{subcard_bg}" fill-opacity="{subcard_bg_opacity}" stroke="{badge_border}" stroke-width="1"/>
     
     <g transform="translate(48, 511)">
-      <text class="mono prompt">~/identity $ <tspan class="prompt-cmd">whoami --verbose</tspan></text>
-      <text y="18" class="mono val"><tspan class="key">&gt; NAME:</tspan> Boopalan S  <tspan class="faint">|</tspan>  <tspan class="key">EXP:</tspan> 2+ Years</text>
-      <text y="36" class="mono val"><tspan class="key">&gt; ROLE:</tspan> Fullstack Software Engineer @ <tspan class="val-bold">Grassstone AI</tspan></text>
-      <text y="54" class="mono val"><tspan class="key">&gt; GOAL:</tspan> Engineering resilient APIs &amp; AI-driven pipelines</text>
+      <text class="mono prompt">~/matrix $ <tspan class="prompt-cmd">cat manifest.json</tspan></text>
+      <text y="18" class="mono val"><tspan class="key">&gt; SPECIALTY :</tspan> Distributed APIs &amp; Vision Workflows</text>
+      <text y="36" class="mono val"><tspan class="key">&gt; APPROACH  :</tspan> Turning complex data into intuitive software</text>
+      <text y="54" class="mono val"><tspan class="key">&gt; MOTTO     :</tspan> <tspan class="val-bold">&quot;Resilient systems, clean code, zero bloat.&quot;</tspan></text>
     </g>
   </g>
 
@@ -318,30 +316,27 @@ def generate_svg(theme="dark"):
       <circle cx="370" cy="-6" r="3.5" fill="{accent_emerald}"/>
       <text x="410" y="-2" text-anchor="middle" class="mono tag" fill="{accent_emerald}">2+ YRS EXP</text>
 
-      <!-- Subtitle Headline -->
-      <text y="22" class="mono headline">React.js · TypeScript · Next.js · Go · Backend APIs &amp; AI Workflows</text>
+      <!-- Mission Statement (No repeated tech keywords) -->
+      <text y="22" class="mono headline">Architecting High-Throughput Microservices &amp; Intelligent Workflows</text>
     </g>
 
-    <!-- Section 1: Core System Telemetry (Uncluttered, Single-Key Per Line) -->
+    <!-- Section 1: Core System Telemetry (Distinct, Non-Overlapping Information) -->
     <g transform="translate(504, 204)">
-      <!-- Row 1: Role -->
-      <text y="0" class="mono"><tspan class="key">&gt; ROLE        :</tspan> <tspan class="val-bold">Fullstack Software Engineer</tspan></text>
+      <!-- Row 1: Current Org & Location -->
+      <text y="0" class="mono"><tspan class="key">&gt; CURRENT ORG :</tspan> <tspan class="val-bold">Grassstone AI</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="{accent_emerald}">● ACTIVE / BENGALURU, IN</tspan><tspan class="faint">]</tspan></text>
 
-      <!-- Row 2: Company -->
-      <text y="20" class="mono"><tspan class="key">&gt; COMPANY     :</tspan> <tspan class="val-bold">Grassstone AI</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="{accent_emerald}">● ACTIVE / BENGALURU</tspan><tspan class="faint">]</tspan></text>
+      <!-- Row 2: Education -->
+      <text y="20" class="mono"><tspan class="key">&gt; EDUCATION   :</tspan> <tspan class="val">B.E. Computer Science &amp; Engineering · Bharathiar Univ</tspan></text>
 
-      <!-- Row 3: Location -->
-      <text y="40" class="mono"><tspan class="key">&gt; LOCATION    :</tspan> <tspan class="val">Bangalore, Karnataka, India</tspan>  <tspan class="faint">|</tspan>  <tspan class="faint">Alumni: Bharathiar Univ (CSE)</tspan></text>
+      <!-- Row 3: Domain Focus -->
+      <text y="40" class="mono"><tspan class="key">&gt; DOMAIN      :</tspan> <tspan class="val">Document Graph Parsing, Queue Orchestration &amp; Web Apps</tspan></text>
 
-      <!-- Row 4: Core Focus -->
-      <text y="60" class="mono"><tspan class="key">&gt; CORE FOCUS  :</tspan> <tspan class="val">High-Throughput Backend APIs &amp; AI Document Workflows</tspan></text>
-
-      <!-- Row 5: Pipeline Status -->
-      <text y="80" class="mono"><tspan class="key">&gt; PIPELINE    :</tspan> <tspan class="accent-green">✓</tspan> <tspan class="val">Building</tspan>  <tspan class="dot">•</tspan>  <tspan class="accent-green">✓</tspan> <tspan class="val">Scaling</tspan>  <tspan class="dot">•</tspan>  <tspan class="accent-green">✓</tspan> <tspan class="val">Shipping Clean Code</tspan></text>
+      <!-- Row 4: Production Workflow -->
+      <text y="60" class="mono"><tspan class="key">&gt; WORKFLOW    :</tspan> <tspan class="accent-green">✓</tspan> <tspan class="val">Designing</tspan>  <tspan class="dot">•</tspan>  <tspan class="accent-green">✓</tspan> <tspan class="val">Scaling</tspan>  <tspan class="dot">•</tspan>  <tspan class="accent-green">✓</tspan> <tspan class="val">Shipping Production Code</tspan></text>
     </g>
 
-    <!-- Section 2: Technical Architecture & Stack (Natural Monospace Spacing, Zero Jitter) -->
-    <g transform="translate(504, 314)">
+    <!-- Section 2: Technical Architecture & Stack (The Sole Source of Truth for Tech) -->
+    <g transform="translate(504, 300)">
       <text y="0" class="mono sec-title">[ TECHNICAL ARCHITECTURE &amp; STACK ]</text>
       
       <text y="20" class="mono"><tspan class="key">&gt; LANGUAGES   :</tspan> <tspan class="val-bold">TypeScript</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">JavaScript</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">Go (Golang)</tspan> <tspan class="dot">·</tspan> <tspan class="val-bold">Python</tspan> <tspan class="dot">·</tspan> <tspan class="val">SQL</tspan></text>
@@ -355,8 +350,8 @@ def generate_svg(theme="dark"):
       <text y="100" class="mono"><tspan class="key">&gt; INFRA/DEVOPS:</tspan> <tspan class="val">Docker</tspan> <tspan class="dot">·</tspan> <tspan class="val">Linux System</tspan> <tspan class="dot">·</tspan> <tspan class="val">Git &amp; GitHub Actions</tspan> <tspan class="dot">·</tspan> <tspan class="val">Postman CI</tspan></text>
     </g>
 
-    <!-- Section 3: Verified Projects (Balanced Alignment & Clean URLs) -->
-    <g transform="translate(504, 444)">
+    <!-- Section 3: Verified Projects (Proof of Engineering) -->
+    <g transform="translate(504, 436)">
       <text y="0" class="mono sec-title">[ VERIFIED BUILDS &amp; SYSTEMS ]</text>
       
       <text y="20" class="mono"><tspan class="key">&gt; DevBench    :</tspan> <tspan class="val-bold">Developer syntax &amp; diff workbench</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="{accent_sky}">devbenchio.vercel.app</tspan><tspan class="faint">]</tspan></text>
@@ -365,7 +360,7 @@ def generate_svg(theme="dark"):
     </g>
 
     <!-- Section 4: Live Links & Interactive Terminal Prompt (Seamless Cursor) -->
-    <g transform="translate(504, 516)">
+    <g transform="translate(504, 514)">
       <!-- Links Row -->
       <text y="0" class="mono"><tspan class="key">&gt; CONNECT     :</tspan> <tspan class="val">boopalan-d3v.vercel.app</tspan> <tspan class="dot">·</tspan> <tspan class="val">github: Boopalan-d3v</tspan> <tspan class="dot">·</tspan> <tspan class="val">in: boopalans01</tspan></text>
 
