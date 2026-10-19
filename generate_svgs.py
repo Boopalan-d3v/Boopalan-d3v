@@ -326,7 +326,7 @@ def generate_svg(theme="dark"):
       <text y="0" class="mono"><tspan class="key">&gt; CURRENT ORG :</tspan> <tspan class="val-bold">Grassstone AI</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="{accent_emerald}">● ACTIVE / BENGALURU, IN</tspan><tspan class="faint">]</tspan></text>
 
       <!-- Row 2: Education -->
-      <text y="20" class="mono"><tspan class="key">&gt; EDUCATION   :</tspan> <tspan class="val">B.E. Computer Science &amp; Engineering · Bharathiar Univ</tspan></text>
+      <text y="20" class="mono"><tspan class="key">&gt; EDUCATION   :</tspan> <tspan class="val">MCA (Master of Computer Applications) · Bharathiar Univ</tspan></text>
 
       <!-- Row 3: Domain Focus -->
       <text y="40" class="mono"><tspan class="key">&gt; DOMAIN      :</tspan> <tspan class="val">Document Graph Parsing, Queue Orchestration &amp; Web Apps</tspan></text>

@@ -23,7 +23,7 @@ Fullstack Software Engineer at **Grassstone AI** (Bangalore, India) specializing
 - 🏗️ **Core Craft**: Architecting scalable services across React, Next.js, TypeScript, Go, and Node.js.
 - 🧠 **AI & Automation**: Engineering document schema extraction workflows using vision models (GLM-OCR) and asynchronous job orchestration with BullMQ & Redis.
 - 📐 **Architecture**: Prioritizing clean type contracts, relational data integrity (PostgreSQL), and containerized deployments with Docker and GitHub Actions.
-- 🎓 **Education**: B.E. in Computer Science & Engineering from Bharathiar University.
+- 🎓 **Education**: MCA (Master of Computer Applications) from Bharathiar University.
 
 ---
 
