@@ -1,155 +1,390 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610">
-<defs>
-  <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#4F46E5">
-      <animate attributeName="stop-color" values="#4F46E5;#7C3AED;#0EA5E9;#4F46E5" dur="9s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset="100%" stop-color="#7C3AED">
-      <animate attributeName="stop-color" values="#7C3AED;#0EA5E9;#4F46E5;#7C3AED" dur="9s" repeatCount="indefinite"/>
-    </stop>
-  </linearGradient>
-  <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#7C3AED"/>
-    <stop offset="50%" stop-color="#0EA5E9"/>
-    <stop offset="100%" stop-color="#059669"/>
-  </linearGradient>
-  <radialGradient id="bgGlow" cx="30%" cy="20%" r="80%">
-    <stop offset="0%" stop-color="#F8FAFC"/>
-    <stop offset="100%" stop-color="#E2E8F0"/>
-  </radialGradient>
-  <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-  <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0"/>
-  <stop offset="45%" stop-color="#0EA5E9" stop-opacity="0.06"/>
-  <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.55"/>
-  <stop offset="55%" stop-color="#0EA5E9" stop-opacity="0.06"/>
-  <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
-</linearGradient>
-  <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
-  <rect width="4" height="1" fill="#334155" opacity="0.035"/>
-</pattern>
-  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-  <feGaussianBlur stdDeviation="4" result="blur"/>
-  <feMerge>
-    <feMergeNode in="blur"/>
-    <feMergeNode in="SourceGraphic"/>
-  </feMerge>
-</filter>
-  <mask id="revealMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1180" height="620">
-  <rect x="0" y="0" width="1180" height="0" fill="#fff">
-    <animate attributeName="height" from="0" to="560" dur="2.6s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-label="Boopalan S - Full Stack Software Engineer Profile Banner">
+  <title>Boopalan S - Full Stack Software Engineer</title>
+  <desc>Professional engineering hero banner for Boopalan S featuring an ASCII portrait, system telemetry, technical stack matrix, and live terminal interface.</desc>
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      
+          <stop offset="0%" stop-color="#2563EB"/>
+          <stop offset="50%" stop-color="#0284C7"/>
+          <stop offset="100%" stop-color="#059669"/>
+        
+    </linearGradient>
+
+    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      
+          <stop offset="0%" stop-color="#0284C7">
+            <animate attributeName="stop-color" values="#0284C7;#2563EB;#7C3AED;#0284C7" dur="10s" repeatCount="indefinite"/>
+          </stop>
+          <stop offset="50%" stop-color="#2563EB">
+            <animate attributeName="stop-color" values="#2563EB;#7C3AED;#0284C7;#2563EB" dur="10s" repeatCount="indefinite"/>
+          </stop>
+          <stop offset="100%" stop-color="#7C3AED">
+            <animate attributeName="stop-color" values="#7C3AED;#0284C7;#2563EB;#7C3AED" dur="10s" repeatCount="indefinite"/>
+          </stop>
+        
+    </linearGradient>
+
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="50%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#F1F5F9"/>
+    </radialGradient>
+
+    <linearGradient id="scanBeamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#0284C7" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.18"/>
+      <stop offset="55%" stop-color="#0284C7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Scanline Pattern -->
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#0F172A" opacity="0.015"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Clip Paths for Clean Borders -->
+    <clipPath id="leftCardClip">
+      <rect x="20" y="64" width="446" height="526" rx="14"/>
+    </clipPath>
+    <clipPath id="rightCardClip">
+      <rect x="484" y="64" width="676" height="526" rx="14"/>
+    </clipPath>
+
+    <!-- Portrait Reveal Mask -->
+    <mask id="portraitReveal" maskUnits="userSpaceOnUse" x="0" y="0" width="1180" height="610">
+      <rect x="0" y="0" width="1180" height="0" fill="#ffffff">
+        <animate attributeName="height" from="0" to="610" dur="2.0s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+      </rect>
+    </mask>
+
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .ascii { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 6.3px; fill: url(#asciiGrad); letter-spacing: -0.15px; }
+      .title-font { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #475569; letter-spacing: 1px; }
+      .head-name { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 21px; font-weight: 800; fill: #0F172A; letter-spacing: 0.5px; }
+      .headline { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12.5px; font-weight: 600; fill: #0369A1; }
+      .prompt { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; fill: #475569; }
+      .prompt-cmd { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; fill: #0284C7; font-weight: 600; }
+      .key { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: #0284C7; font-weight: 700; letter-spacing: 0.5px; }
+      .val { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: #1E293B; font-weight: 500; }
+      .val-bold { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: #0F172A; font-weight: 700; }
+      .tag { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; fill: #0369A1; font-weight: 700; letter-spacing: 0.5px; }
+      .faint { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: #94A3B8; }
+      .accent-green { fill: #059669; font-weight: 700; }
+      .accent-violet { fill: #6D28D9; font-weight: 700; }
+      text, tspan { white-space: pre; }
+    </style>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1180" height="610" rx="20" fill="url(#bgGrad)"/>
+  <rect width="1180" height="610" rx="20" fill="url(#scanlines)"/>
+
+  <!-- Outer Luminous Border -->
+  <rect x="2" y="2" width="1176" height="606" rx="19" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" opacity="0.75">
+    <animate attributeName="opacity" values="0.55;0.95;0.55" dur="4s" repeatCount="indefinite"/>
   </rect>
-</mask>
-  <clipPath id="lc0"><rect x="500" y="26.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="0.75s" fill="freeze"/></rect></clipPath><clipPath id="lc1"><rect x="500" y="50.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="0.86s" fill="freeze"/></rect></clipPath><clipPath id="lc2"><rect x="500" y="72.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="0.98s" fill="freeze"/></rect></clipPath><clipPath id="lc3"><rect x="500" y="94.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.09s" fill="freeze"/></rect></clipPath><clipPath id="lc4"><rect x="500" y="116.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.21s" fill="freeze"/></rect></clipPath><clipPath id="lc5"><rect x="500" y="138.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.32s" fill="freeze"/></rect></clipPath><clipPath id="lc6"><rect x="500" y="160.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.44s" fill="freeze"/></rect></clipPath><clipPath id="lc7"><rect x="500" y="182.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.55s" fill="freeze"/></rect></clipPath><clipPath id="lc8"><rect x="500" y="204.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.67s" fill="freeze"/></rect></clipPath><clipPath id="lc9"><rect x="500" y="226.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.78s" fill="freeze"/></rect></clipPath><clipPath id="lc10"><rect x="500" y="248.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="1.90s" fill="freeze"/></rect></clipPath><clipPath id="lc11"><rect x="500" y="270.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.02s" fill="freeze"/></rect></clipPath><clipPath id="lc12"><rect x="500" y="292.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.13s" fill="freeze"/></rect></clipPath><clipPath id="lc13"><rect x="500" y="314.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.25s" fill="freeze"/></rect></clipPath><clipPath id="lc14"><rect x="500" y="336.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.36s" fill="freeze"/></rect></clipPath><clipPath id="lc15"><rect x="500" y="358.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.48s" fill="freeze"/></rect></clipPath><clipPath id="lc16"><rect x="500" y="380.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.59s" fill="freeze"/></rect></clipPath><clipPath id="lc17"><rect x="500" y="402.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.71s" fill="freeze"/></rect></clipPath><clipPath id="lc18"><rect x="500" y="424.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.82s" fill="freeze"/></rect></clipPath><clipPath id="lc19"><rect x="500" y="446.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="2.94s" fill="freeze"/></rect></clipPath><clipPath id="lc20"><rect x="500" y="468.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="3.05s" fill="freeze"/></rect></clipPath><clipPath id="lc21"><rect x="500" y="490.00" width="0" height="24"><animate attributeName="width" from="0" to="690" dur="0.38s" begin="3.17s" fill="freeze"/></rect></clipPath>
-  <style>
-    .ascii  { font-family: 'Courier New', Consolas, monospace; font-size: 7.4px; fill: url(#asciiGrad); letter-spacing: -0.2px; }
-    .key    { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #0284C7; font-weight: bold; }
-    .value  { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #1E293B; }
-    .cc     { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #94A3B8; }
-    .head   { font-family: 'Courier New', Consolas, monospace; font-size: 17px; fill: #7C3AED; font-weight: bold; }
-    .accent { font-family: 'Courier New', Consolas, monospace; font-size: 15px; fill: #059669; font-weight: bold; }
-    text, tspan { white-space: pre; }
+
+  <!-- Top Terminal Chrome Titlebar -->
+  <g id="titlebar">
+    <rect x="20" y="16" width="1140" height="36" rx="10" fill="#FFFFFF" fill-opacity="0.95" stroke="#CBD5E1" stroke-width="1"/>
     
-    .term-label { font-family: 'Courier New', Consolas, monospace; font-size: 12px; fill: #64748B; letter-spacing: 0.5px; }
-    .scan-label { font-family: 'Courier New', Consolas, monospace; font-size: 10px; fill: #DC2626; letter-spacing: 1px; }
-    .panel-title { font-family: 'Courier New', Consolas, monospace; font-size: 11px; fill: #0284C7; letter-spacing: 2px; opacity: 0.75; }
-    .cursor-blink { fill: #0EA5E9; }
+    <!-- Window Action Dots -->
+    <circle cx="40" cy="34" r="5" fill="#EF4444">
+      <animate attributeName="opacity" values="1;0.6;1" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="58" cy="34" r="5" fill="#F59E0B">
+      <animate attributeName="opacity" values="1;0.6;1" dur="3.5s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="76" cy="34" r="5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.6;1" dur="3.5s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
 
-  </style>
-</defs>
+    <!-- Center Session Title -->
+    <text x="590" y="38" text-anchor="middle" class="mono title-font">boopalan@grassstone-ai: ~/workspace/profile (zsh) — 60fps</text>
 
-<rect width="1180" height="610" rx="18" fill="url(#bgGlow)"/>
-<rect width="1180" height="610" rx="18" fill="url(#scanlines)"/>
-
-<g id="titlebar">
-  <rect x="3" y="3" width="1174" height="34" rx="16" fill="#FFFFFF" fill-opacity="0.9"/>
-  <circle cx="24" cy="20" r="5" fill="#F87171"><animate attributeName="opacity" values="1;0.55;1" dur="4s" repeatCount="indefinite"/></circle>
-  <circle cx="42" cy="20" r="5" fill="#FBBF24"><animate attributeName="opacity" values="1;0.55;1" dur="4s" begin="0.3s" repeatCount="indefinite"/></circle>
-  <circle cx="60" cy="20" r="5" fill="#34D399"><animate attributeName="opacity" values="1;0.55;1" dur="4s" begin="0.6s" repeatCount="indefinite"/></circle>
-  <text x="590" y="25" text-anchor="middle" class="term-label">boopalan@devos ~ % ./profile.sh --live</text>
-  <circle cx="1122" cy="20" r="4" fill="#EF4444">
-    <animate attributeName="opacity" values="1;0.15;1" dur="1.1s" repeatCount="indefinite"/>
-  </circle>
-  <text x="1132" y="24" class="scan-label">SCANNING</text>
-</g>
-
-<g transform="translate(0,38)">
-  <rect x="14" y="26" width="488" height="468" rx="14" fill="#FFFFFF" fill-opacity="0.55" stroke="url(#borderGrad)" stroke-width="1" opacity="0.4"/>
-  <rect x="508" y="10" width="655" height="500" rx="14" fill="#FFFFFF" fill-opacity="0.55" stroke="url(#borderGrad)" stroke-width="1" opacity="0.4"/>
-  <text x="30" y="24" class="panel-title">VISUAL.MAP</text>
-  <text x="524" y="24" class="panel-title">SYSTEM.INFO</text>
-
-  <g mask="url(#revealMask)">
-  <text x="30" y="0" class="ascii">
-  
-<tspan x="30" y="79.98" xml:space="preserve">                 ..:--==++++++***++=--:.  :*+*%***=.                                    :=  </tspan>
-<tspan x="30" y="87.53" xml:space="preserve">         ------====+++++*****%%%%%%%****+=::++*%%%%*=.                                   .=.</tspan>
-<tspan x="30" y="95.07" xml:space="preserve">         .-=*********%%%%%%%%%%%%%%%%%%%%%%*+*+*****%*-          ..                       :=</tspan>
-<tspan x="30" y="102.62" xml:space="preserve">            .-+*%%%%%%******%%%*%%%%*******%%%%*%%***%%+.      .=%-                     .:  </tspan>
-<tspan x="30" y="110.17" xml:space="preserve">                .-+*%%%%%%%%*%%%%%%%%%%%%%%****%%%%%%**%*.   :+%%*     ..             .:   :</tspan>
-<tspan x="30" y="117.72" xml:space="preserve">             .:--=++**%%%*%%%*******%%%%%%%%%%***%%%%%%*%*-=*%%**+   ..              :: .::-</tspan>
-<tspan x="30" y="125.27" xml:space="preserve">      ..:-==++*******%%*%%**********%%%%%%%%%*%%%*%%%%%%*%%%%***%: :..  ...         :.  .  =</tspan>
-<tspan x="30" y="132.81" xml:space="preserve">:-++==++++*******%%%%%%%*******%%%%%%%%%%%%%*%+:+%*%%%%%%****%*%+                  :      :+</tspan>
-<tspan x="30" y="140.36" xml:space="preserve">  :-=*%%%%%%%%%%%***%%*****%%%%%%%%%%%%%%%%*%+   =%**%%%%%%%%%***+-.             .:.:+    ::</tspan>
-<tspan x="30" y="147.91" xml:space="preserve">      .:=++*%*%%%%%%****%%%*%%%%%%%%%%%%%%*%*     -***%*%%%%%%%%%%%%+-.         :. ..-.:    </tspan>
-<tspan x="30" y="155.46" xml:space="preserve">          :+**%%%%****%%*%%%*****%%%%%%%%***.      .***%%%%%*%%*%***%%*+:     ...   -=:  ::.</tspan>
-<tspan x="30" y="163.01" xml:space="preserve">        .+*+***%%***%%%%%******%%%%%%%%%%*%:         =**%%%%**%***%%**%%%*=:   -=.     .:.  </tspan>
-<tspan x="30" y="170.55" xml:space="preserve">       -*++*%%%***%%%%******%%%%%%%%**%%*%=         ..+***%*%**%***%%******+-  -+:  ..:.    </tspan>
-<tspan x="30" y="178.10" xml:space="preserve">      =++*%%%%***%%%*****%%%%%*%%%%%**%***          ...:++*%***%%**%%*=:.      ......       </tspan>
-<tspan x="30" y="185.65" xml:space="preserve">    :+++*%%*%***%%****%%**%%%**%%%%**%%*%:              .++*%****%****%%*+=:                </tspan>
-<tspan x="30" y="193.20" xml:space="preserve">   -++*%%*%%***%****%%%***%%%**%%*%**%*%+                 =+*%*%*%%**+:....                 </tspan>
-<tspan x="30" y="200.75" xml:space="preserve"> .=++*%*%%%***%***%%%%%%**%%**%*%**++%**.                  =+*=+%*%%*%*-                    </tspan>
-<tspan x="30" y="208.29" xml:space="preserve">:==*%**%%%%**%***%%%%%%%***%**%%%*%:+%%=                    -*- ***%**%%*:                  </tspan>
-<tspan x="30" y="215.84" xml:space="preserve">**%%%%%%%%**%%%***%%%%%%***%**%%*%* +%*           .    .:-==-%*-=%*%****%%-                 </tspan>
-<tspan x="30" y="223.39" xml:space="preserve">++*%**%%%%%%%%%**%%%%%%%***%**%%*%- +*-           :   =+++=====+-=%*%**%**%-                </tspan>
-<tspan x="30" y="230.94" xml:space="preserve">  ++=+**%%%%%*%**%%%%%%%%**%**%***..+%==++=       ....            ********%%.         . .   </tspan>
-<tspan x="30" y="238.49" xml:space="preserve">.=*=++*%*%%%%%%**%*%%%%%%%**+*%*%%*%%**+=-.          :.           :%%***=*-+:               </tspan>
-<tspan x="30" y="246.03" xml:space="preserve">.*==++*%%%%%%%%*+%*%%%%%%%**+*%**-:.:.               -.            *++%%+=+.                </tspan>
-<tspan x="30" y="253.58" xml:space="preserve"> =*=++%*%%%%%%*+*%*%%%**%%%*+**%-                    .             :-.%%%=+*.               </tspan>
-<tspan x="30" y="261.13" xml:space="preserve">  +*+*%%%%**%%*+*%**%%**%%**%***                                    = +***=+*               </tspan>
-<tspan x="30" y="268.68" xml:space="preserve">   +%*%**%%%%%*+*%%%%***%%****%:                    ..::::::.       ::-+====++              </tspan>
-<tspan x="30" y="276.23" xml:space="preserve">  .**%%%%%**%*%+*%+.**=+%%***%+            .:-==+****%%%%%***.      .-=+=====%:             </tspan>
-<tspan x="30" y="283.77" xml:space="preserve">  *%***+++=*%*%++%- +*. **+++*           =**%%%%%%%%%******+*:      -:*======*:             </tspan>
-<tspan x="30" y="291.32" xml:space="preserve"> .-:.=*====*%*%*=%- :%. *% .=:          .%%%*******%%%%%%***+      :*=*======*.             </tspan>
-<tspan x="30" y="298.87" xml:space="preserve">     :%===+%%%**=*=  =: +-               =%**%%%%%%******%%*.     .*%%*======*            ..</tspan>
-<tspan x="30" y="306.42" xml:space="preserve">   ..:*===+%*******=.   -  .              =%%*+==::.    .-=      :*****+====++   ....::::::.</tspan>
-<tspan x="30" y="313.97" xml:space="preserve">    .:*+==**%%%%%%%%%+:. . .:.             :+-.       .::       =%%*=========*-:::..........</tspan>
-<tspan x="30" y="321.51" xml:space="preserve">    ..*+=+%%***++*%**%%*-.    .              .::  :::..       :*%*%+======+==++    ..:....  </tspan>
-<tspan x="30" y="329.06" xml:space="preserve">    ..=*=+++=====**%%%%%%%*==+*+:               ::          .=%*+**======+====*+....        </tspan>
-<tspan x="30" y="336.61" xml:space="preserve"> ...  -*=========+%********%%%%%%*=:.                      -*%*+++*====++======*+.          </tspan>
-<tspan x="30" y="344.16" xml:space="preserve">       *+==++=====*=====+********%%%*+--::.              -=+%**++**===++======++=*=         </tspan>
-<tspan x="30" y="351.71" xml:space="preserve">   .   .*+==++============+***+*%*****:::-------::::..:--:..****+*+==++======+*===++===-.   </tspan>
-<tspan x="30" y="359.25" xml:space="preserve">  .      =*+=++=============++*******%+......:.::.::-:::. ..=*****==+**======*+=++=++=++++=:</tspan>
-<tspan x="30" y="366.80" xml:space="preserve">          .=++++==================++***=:--:......  .........+***===**=*+===*+++==========+*</tspan>
-<tspan x="30" y="374.35" xml:space="preserve">            .=+++======================+++*+=-:... ........:.:*+=====+*+*+=++===============</tspan>
-<tspan x="30" y="381.90" xml:space="preserve">             :*=++==========================++++==:....:::..=+=========*+*++===========+====</tspan>
-<tspan x="30" y="389.45" xml:space="preserve">          .:--*+=+++=================+++========++++-:....-++==========+*+*============+====</tspan>
-<tspan x="30" y="396.99" xml:space="preserve">    .::----:.:+*+=++================**+*+============+=::++=========+++*+++=============+===</tspan>
-<tspan x="30" y="404.54" xml:space="preserve">-:-::.    .:+*+====+++++============+*=*===============*+========++++=+*+*==============++==</tspan>
-<tspan x="30" y="412.09" xml:space="preserve">    ..:----+*===+=======+++++++=====*=++===============*=======+++==++***================++=</tspan>
-<tspan x="30" y="419.64" xml:space="preserve">:--=-:: ...*====+++================*=+*=+++++++++===========++===+++**++==================*=</tspan>
-<tspan x="30" y="427.19" xml:space="preserve">:.     =+=++=======+==============*=+*========+++==========++===+*++++===-:..:============++</tspan>
-<tspan x="30" y="434.73" xml:space="preserve">      -*============+============*+=*===========================****===....:===============*</tspan>
-<tspan x="30" y="442.28" xml:space="preserve">    :=*=============++==========*+=*+==========================**+*====. ++=-:=============+</tspan>
-<tspan x="30" y="449.83" xml:space="preserve">.-=+++==========================*=++======================-...:*+++  === ....-=+============</tspan>
-<tspan x="30" y="457.38" xml:space="preserve">+++=============================*+++================:::-=: -==-===+=.-+=- :+==-:..-=========</tspan>
-<tspan x="30" y="464.93" xml:space="preserve">=======+=========================**++++++++:.....=- :-:.-- ::-+******+***=.....:-===========</tspan>
-<tspan x="30" y="472.47" xml:space="preserve">========+========================-=**+*+*+*: -====- -----==-=*+-:.     :-+*++==+============</tspan>
-
-  </text>
+    <!-- Right Live Telemetry Status -->
+    <circle cx="1108" cy="34" r="4.5" fill="#059669">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;5.5;4" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1120" y="38" class="mono tag" fill="#059669">ONLINE</text>
   </g>
 
-  <g clip-path="url(#lc0)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="42" class="head">boopalan@devos</tspan><tspan class="cc"> -——————————————————————————————————————————-—-</tspan></text></g><g clip-path="url(#lc1)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="66" class="cc">. </tspan><tspan class="key">Subject</tspan><tspan class="cc">: .......................... </tspan><tspan class="value">Boopalan Subramanian</tspan></text></g><g clip-path="url(#lc2)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="88" class="cc">. </tspan><tspan class="key">Role</tspan><tspan class="cc">: ............................. </tspan><tspan class="value">Full-Stack Engineer · Software Dev</tspan></text></g><g clip-path="url(#lc3)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="110" class="cc">. </tspan><tspan class="key">Origin</tspan><tspan class="cc">: ........................... </tspan><tspan class="value">India</tspan></text></g><g clip-path="url(#lc4)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="132" class="cc">. </tspan><tspan class="key">Education</tspan><tspan class="cc">: ......................... </tspan><tspan class="value">Computer Science &amp; Engineering</tspan></text></g><g clip-path="url(#lc5)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="154" class="cc">. </tspan><tspan class="key">Status</tspan><tspan class="cc">: ............ </tspan><tspan class="value">Building • Learning • Shipping</tspan></text></g><g clip-path="url(#lc6)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="176" class="cc">. </tspan><tspan class="key">ToolChain</tspan><tspan class="cc">: ................. </tspan><tspan class="value">VS Code, Git, Docker, Postman</tspan></text></g><g clip-path="url(#lc7)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="198" class="cc">. </tspan></text></g><g clip-path="url(#lc8)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="220" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Lang</tspan><tspan class="cc">: .......... </tspan><tspan class="value">TypeScript, JavaScript, Python</tspan></text></g><g clip-path="url(#lc9)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="242" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Frontend</tspan><tspan class="cc">: ...... </tspan><tspan class="value">React, Next.js, HTML5, CSS3</tspan></text></g><g clip-path="url(#lc10)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="264" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Backend</tspan><tspan class="cc">: ....... </tspan><tspan class="value">Node.js, Express.js, REST APIs</tspan></text></g><g clip-path="url(#lc11)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="286" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Database</tspan><tspan class="cc">: ...... </tspan><tspan class="value">PostgreSQL, MongoDB, MySQL</tspan></text></g><g clip-path="url(#lc12)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="308" class="cc">. </tspan><tspan class="key">Core</tspan><tspan class="cc">.</tspan><tspan class="key">Infra</tspan><tspan class="cc">: ......... </tspan><tspan class="value">Docker, Linux, Git, CI/CD</tspan></text></g><g clip-path="url(#lc13)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="330" class="cc">. </tspan></text></g><g clip-path="url(#lc14)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="352" class="accent">- Contact</tspan><tspan class="cc"> -————————————————————————————————————————————-—-</tspan></text></g><g clip-path="url(#lc15)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="374" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Mail</tspan><tspan class="cc">: ....................... </tspan><tspan class="value">boopalans0112@gmail.com</tspan></text></g><g clip-path="url(#lc16)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="396" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Portfolio</tspan><tspan class="cc">: .................. </tspan><tspan class="value">trufzone.vercel.app</tspan></text></g><g clip-path="url(#lc17)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="418" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">: ................... </tspan><tspan class="value">boopalan-subramanian</tspan></text></g><g clip-path="url(#lc18)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="440" class="cc">. </tspan><tspan class="key">Grid</tspan><tspan class="cc">.</tspan><tspan class="key">Github</tspan><tspan class="cc">: ..................... </tspan><tspan class="value">Boopalan-d3v</tspan></text></g><g clip-path="url(#lc19)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="462" class="cc">. </tspan></text></g><g clip-path="url(#lc20)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="484" class="accent">- Live Stats</tspan><tspan class="cc"> -————————————————————————————————————————————-—-</tspan></text></g><g clip-path="url(#lc21)"><text x="520" y="0" fill="#1E293B"><tspan x="520" y="506" class="cc">. </tspan><tspan class="value">See live GitHub stats badges below in README ↓</tspan></text></g>
+  <!-- ==================== LEFT COLUMN: VISUAL / IDENTITY ==================== -->
+  <g id="left-column">
+    <!-- Main Left Card Surface -->
+    <rect x="20" y="64" width="446" height="526" rx="14" fill="#FFFFFF" fill-opacity="0.85" stroke="url(#borderGrad)" stroke-width="1" opacity="0.45"/>
 
-  <rect x="522" y="491.0" width="9" height="16" class="cursor-blink" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;1;0;1;0" keyTimes="0;0.01;0.02;0.3;0.5;0.7;0.85;1" dur="1.4s" begin="3.66s" repeatCount="indefinite"/>
-  </rect>
-</g>
+    <!-- Left Card Header -->
+    <g transform="translate(36, 88)">
+      <circle cx="4" cy="-4" r="3" fill="#0284C7"/>
+      <text x="14" y="0" class="mono title-font" fill="#0284C7" font-weight="700">VISUAL.MAP // NEURAL MATRIX 01</text>
+      <text x="414" y="0" text-anchor="end" class="mono faint">ASCII 53x92</text>
+    </g>
 
-<rect x="0" y="-70" width="1180" height="70" fill="url(#scanGrad)" opacity="0.8" style="mix-blend-mode:multiply">
-  <animateTransform attributeName="transform" type="translate" from="0 -70" to="0 680" dur="4.2s" repeatCount="indefinite"/>
-</rect>
+    <!-- ASCII Portrait Render with SMIL Staggered Reveal Mask -->
+    <g mask="url(#portraitReveal)">
+      <text class="ascii">
+        <tspan x="69" y="106.00" xml:space="preserve">                 ..:--==++++++***++=--:.  :*+*%***=.                                    :=</tspan>
+<tspan x="69" y="113.10" xml:space="preserve">         ------====+++++*****%%%%%%%****+=::++*%%%%*=.                                   .=.</tspan>
+<tspan x="69" y="120.20" xml:space="preserve">         .-=*********%%%%%%%%%%%%%%%%%%%%%%*+*+*****%*-          ..                       :=</tspan>
+<tspan x="69" y="127.30" xml:space="preserve">            .-+*%%%%%%******%%%*%%%%*******%%%%*%%***%%+.      .=%-                     .:</tspan>
+<tspan x="69" y="134.40" xml:space="preserve">                .-+*%%%%%%%%*%%%%%%%%%%%%%%****%%%%%%**%*.   :+%%*     ..             .:   :</tspan>
+<tspan x="69" y="141.50" xml:space="preserve">             .:--=++**%%%*%%%*******%%%%%%%%%%***%%%%%%*%*-=*%%**+   ..              :: .::-</tspan>
+<tspan x="69" y="148.60" xml:space="preserve">      ..:-==++*******%%*%%**********%%%%%%%%%*%%%*%%%%%%*%%%%***%: :..  ...         :.  .  =</tspan>
+<tspan x="69" y="155.70" xml:space="preserve">:-++==++++*******%%%%%%%*******%%%%%%%%%%%%%*%+:+%*%%%%%%****%*%+                  :      :+</tspan>
+<tspan x="69" y="162.80" xml:space="preserve">  :-=*%%%%%%%%%%%***%%*****%%%%%%%%%%%%%%%%*%+   =%**%%%%%%%%%***+-.             .:.:+    ::</tspan>
+<tspan x="69" y="169.90" xml:space="preserve">      .:=++*%*%%%%%%****%%%*%%%%%%%%%%%%%%*%*     -***%*%%%%%%%%%%%%+-.         :. ..-.:</tspan>
+<tspan x="69" y="177.00" xml:space="preserve">          :+**%%%%****%%*%%%*****%%%%%%%%***.      .***%%%%%*%%*%***%%*+:     ...   -=:  ::.</tspan>
+<tspan x="69" y="184.10" xml:space="preserve">        .+*+***%%***%%%%%******%%%%%%%%%%*%:         =**%%%%**%***%%**%%%*=:   -=.     .:.</tspan>
+<tspan x="69" y="191.20" xml:space="preserve">       -*++*%%%***%%%%******%%%%%%%%**%%*%=         ..+***%*%**%***%%******+-  -+:  ..:.</tspan>
+<tspan x="69" y="198.30" xml:space="preserve">      =++*%%%%***%%%*****%%%%%*%%%%%**%***          ...:++*%***%%**%%*=:.      ......</tspan>
+<tspan x="69" y="205.40" xml:space="preserve">    :+++*%%*%***%%****%%**%%%**%%%%**%%*%:              .++*%****%****%%*+=:</tspan>
+<tspan x="69" y="212.50" xml:space="preserve">   -++*%%*%%***%****%%%***%%%**%%*%**%*%+                 =+*%*%*%%**+:....</tspan>
+<tspan x="69" y="219.60" xml:space="preserve"> .=++*%*%%%***%***%%%%%%**%%**%*%**++%**.                  =+*=+%*%%*%*-</tspan>
+<tspan x="69" y="226.70" xml:space="preserve">:==*%**%%%%**%***%%%%%%%***%**%%%*%:+%%=                    -*- ***%**%%*:</tspan>
+<tspan x="69" y="233.80" xml:space="preserve">**%%%%%%%%**%%%***%%%%%%***%**%%*%* +%*           .    .:-==-%*-=%*%****%%-</tspan>
+<tspan x="69" y="240.90" xml:space="preserve">++*%**%%%%%%%%%**%%%%%%%***%**%%*%- +*-           :   =+++=====+-=%*%**%**%-</tspan>
+<tspan x="69" y="248.00" xml:space="preserve">  ++=+**%%%%%*%**%%%%%%%%**%**%***..+%==++=       ....            ********%%.         . .</tspan>
+<tspan x="69" y="255.10" xml:space="preserve">.=*=++*%*%%%%%%**%*%%%%%%%**+*%*%%*%%**+=-.          :.           :%%***=*-+:</tspan>
+<tspan x="69" y="262.20" xml:space="preserve">.*==++*%%%%%%%%*+%*%%%%%%%**+*%**-:.:.               -.            *++%%+=+.</tspan>
+<tspan x="69" y="269.30" xml:space="preserve"> =*=++%*%%%%%%*+*%*%%%**%%%*+**%-                    .             :-.%%%=+*.</tspan>
+<tspan x="69" y="276.40" xml:space="preserve">  +*+*%%%%**%%*+*%**%%**%%**%***                                    = +***=+*</tspan>
+<tspan x="69" y="283.50" xml:space="preserve">   +%*%**%%%%%*+*%%%%***%%****%:                    ..::::::.       ::-+====++</tspan>
+<tspan x="69" y="290.60" xml:space="preserve">  .**%%%%%**%*%+*%+.**=+%%***%+            .:-==+****%%%%%***.      .-=+=====%:</tspan>
+<tspan x="69" y="297.70" xml:space="preserve">  *%***+++=*%*%++%- +*. **+++*           =**%%%%%%%%%******+*:      -:*======*:</tspan>
+<tspan x="69" y="304.80" xml:space="preserve"> .-:.=*====*%*%*=%- :%. *% .=:          .%%%*******%%%%%%***+      :*=*======*.</tspan>
+<tspan x="69" y="311.90" xml:space="preserve">     :%===+%%%**=*=  =: +-               =%**%%%%%%******%%*.     .*%%*======*            ..</tspan>
+<tspan x="69" y="319.00" xml:space="preserve">   ..:*===+%*******=.   -  .              =%%*+==::.    .-=      :*****+====++   ....::::::.</tspan>
+<tspan x="69" y="326.10" xml:space="preserve">    .:*+==**%%%%%%%%%+:. . .:.             :+-.       .::       =%%*=========*-:::..........</tspan>
+<tspan x="69" y="333.20" xml:space="preserve">    ..*+=+%%***++*%**%%*-.    .              .::  :::..       :*%*%+======+==++    ..:....</tspan>
+<tspan x="69" y="340.30" xml:space="preserve">    ..=*=+++=====**%%%%%%%*==+*+:               ::          .=%*+**======+====*+....</tspan>
+<tspan x="69" y="347.40" xml:space="preserve"> ...  -*=========+%********%%%%%%*=:.                      -*%*+++*====++======*+.</tspan>
+<tspan x="69" y="354.50" xml:space="preserve">       *+==++=====*=====+********%%%*+--::.              -=+%**++**===++======++=*=</tspan>
+<tspan x="69" y="361.60" xml:space="preserve">   .   .*+==++============+***+*%*****:::-------::::..:--:..****+*+==++======+*===++===-.</tspan>
+<tspan x="69" y="368.70" xml:space="preserve">  .      =*+=++=============++*******%+......:.::.::-:::. ..=*****==+**======*+=++=++=++++=:</tspan>
+<tspan x="69" y="375.80" xml:space="preserve">          .=++++==================++***=:--:......  .........+***===**=*+===*+++==========+*</tspan>
+<tspan x="69" y="382.90" xml:space="preserve">            .=+++======================+++*+=-:... ........:.:*+=====+*+*+=++===============</tspan>
+<tspan x="69" y="390.00" xml:space="preserve">             :*=++==========================++++==:....:::..=+=========*+*++===========+====</tspan>
+<tspan x="69" y="397.10" xml:space="preserve">          .:--*+=+++=================+++========++++-:....-++==========+*+*============+====</tspan>
+<tspan x="69" y="404.20" xml:space="preserve">    .::----:.:+*+=++================**+*+============+=::++=========+++*+++=============+===</tspan>
+<tspan x="69" y="411.30" xml:space="preserve">-:-::.    .:+*+====+++++============+*=*===============*+========++++=+*+*==============++==</tspan>
+<tspan x="69" y="418.40" xml:space="preserve">    ..:----+*===+=======+++++++=====*=++===============*=======+++==++***================++=</tspan>
+<tspan x="69" y="425.50" xml:space="preserve">:--=-:: ...*====+++================*=+*=+++++++++===========++===+++**++==================*=</tspan>
+<tspan x="69" y="432.60" xml:space="preserve">:.     =+=++=======+==============*=+*========+++==========++===+*++++===-:..:============++</tspan>
+<tspan x="69" y="439.70" xml:space="preserve">      -*============+============*+=*===========================****===....:===============*</tspan>
+<tspan x="69" y="446.80" xml:space="preserve">    :=*=============++==========*+=*+==========================**+*====. ++=-:=============+</tspan>
+<tspan x="69" y="453.90" xml:space="preserve">.-=+++==========================*=++======================-...:*+++  === ....-=+============</tspan>
+<tspan x="69" y="461.00" xml:space="preserve">+++=============================*+++================:::-=: -==-===+=.-+=- :+==-:..-=========</tspan>
+<tspan x="69" y="468.10" xml:space="preserve">=======+=========================**++++++++:.....=- :-:.-- ::-+******+***=.....:-===========</tspan>
+<tspan x="69" y="475.20" xml:space="preserve">========+========================-=**+*+*+*: -====- -----==-=*+-:.     :-+*++==+============</tspan>
+      </text>
+    </g>
 
-<rect x="3" y="3" width="1174" height="604" rx="16" fill="none" stroke="url(#borderGrad)" stroke-width="2" opacity="0.75">
-  <animate attributeName="opacity" values="0.45;0.9;0.45" dur="3.2s" repeatCount="indefinite"/>
-</rect>
+    <!-- Subtle Moving Scanline Beam over Left Card -->
+    <g clip-path="url(#leftCardClip)">
+      <rect x="20" y="64" width="446" height="50" fill="url(#scanBeamGrad)" opacity="0.65" style="mix-blend-mode: multiply">
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="0 480" dur="4.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Identity Sub-Card at Bottom of Left Column -->
+    <rect x="34" y="490" width="418" height="86" rx="10" fill="#F8FAFC" fill-opacity="0.95" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <g transform="translate(48, 510)">
+      <text class="mono prompt">~/identity $ <tspan class="prompt-cmd">whoami --verbose</tspan></text>
+      <text y="18" class="mono val"><tspan class="key">&gt; NAME:</tspan> Boopalan S  <tspan class="faint">|</tspan>  <tspan class="key">EXP:</tspan> 2+ Years</text>
+      <text y="36" class="mono val"><tspan class="key">&gt; ROLE:</tspan> Fullstack Software Engineer @ <tspan class="val-bold">Grassstone AI</tspan></text>
+      <text y="54" class="mono val"><tspan class="key">&gt; GOAL:</tspan> Engineering resilient APIs &amp; AI-driven pipelines</text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT COLUMN: SYSTEM.INFO ==================== -->
+  <g id="right-column">
+    <!-- Main Right Card Surface -->
+    <rect x="484" y="64" width="676" height="526" rx="14" fill="#FFFFFF" fill-opacity="0.85" stroke="url(#borderGrad)" stroke-width="1" opacity="0.45"/>
+
+    <!-- Right Header Telemetry -->
+    <g transform="translate(504, 88)">
+      <circle cx="4" cy="-4" r="3" fill="#0284C7"/>
+      <text x="14" y="0" class="mono title-font" fill="#0284C7" font-weight="700">SYSTEM.INFO // TELEMETRY &amp; ARCHITECTURE</text>
+      <text x="636" y="0" text-anchor="end" class="mono faint">NODE: BENGALURU-IN // PROD</text>
+      <line x1="0" y1="12" x2="636" y2="12" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+
+    <!-- Terminal Command Execution -->
+    <g transform="translate(504, 118)">
+      <text class="mono prompt">boopalan@grassstone:~$ <tspan class="prompt-cmd">./profile.sh --status --inspect</tspan></text>
+    </g>
+
+    <!-- Hero Identity & Badges with Role Rotation -->
+    <g transform="translate(504, 148)">
+      <text class="mono head-name">BOOPALAN S</text>
+      
+      <!-- Role Badge Pill Container -->
+      <rect x="160" y="-18" width="180" height="22" rx="4" fill="#EFF6FF" stroke="#CBD5E1" stroke-width="1"/>
+      
+      <!-- Rotating Role Labels via SMIL -->
+      <g>
+        <text x="250" y="-3" text-anchor="middle" class="mono tag" fill="#0369A1">
+          FULL STACK ENGINEER
+          <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.30;0.34;0.64;0.68;0.96;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+        <text x="250" y="-3" text-anchor="middle" class="mono tag" fill="#059669" opacity="0">
+          BACKEND &amp; GO DEV
+          <animate attributeName="opacity" values="0;0;1;1;0;0;0" keyTimes="0;0.32;0.36;0.64;0.68;0.98;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+        <text x="250" y="-3" text-anchor="middle" class="mono tag" fill="#6D28D9" opacity="0">
+          AI WORKFLOWS DEV
+          <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.64;0.68;0.96;0.98;1;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+      </g>
+
+      <!-- Exp Pill -->
+      <rect x="348" y="-18" width="102" height="22" rx="4" fill="#EFF6FF" stroke="#CBD5E1" stroke-width="1"/>
+      <circle cx="362" cy="-7" r="3.5" fill="#059669"/>
+      <text x="402" y="-3" text-anchor="middle" class="mono tag" fill="#059669">2+ YRS EXP</text>
+
+      <!-- Subtitle Headline -->
+      <text y="20" class="mono headline">React.js · TypeScript · Next.js · Go · Backend APIs &amp; AI Workflows</text>
+    </g>
+
+    <!-- Section 1: Core System Telemetry (Label-Value Grid) -->
+    <g transform="translate(504, 196)">
+      <!-- Row 1: Company & Role -->
+      <text y="0" class="mono key">&gt; COMPANY     :</text>
+      <text x="120" y="0" class="mono val-bold">Grassstone AI</text>
+      <text x="236" y="0" class="mono key">&gt; ROLE :</text>
+      <text x="296" y="0" class="mono val">Fullstack Software Engineer</text>
+      <circle cx="515" cy="-4" r="3.5" fill="#059669"/>
+      <text x="525" y="0" class="mono tag" fill="#059669">CURRENT</text>
+
+      <!-- Row 2: Location & Education -->
+      <text y="20" class="mono key">&gt; LOCATION    :</text>
+      <text x="120" y="20" class="mono val">Bangalore, Karnataka, India</text>
+      <text x="350" y="20" class="mono key">&gt; ALUMNI :</text>
+      <text x="424" y="20" class="mono val">Bharathiar University (CSE)</text>
+
+      <!-- Row 3: Specialization Focus -->
+      <text y="40" class="mono key">&gt; CORE FOCUS  :</text>
+      <text x="120" y="40" class="mono val">High-Throughput Backend APIs, Microservices &amp; AI Workflows</text>
+
+      <!-- Row 4: Status -->
+      <text y="60" class="mono key">&gt; PIPELINE    :</text>
+      <text x="120" y="60" class="mono val"><tspan class="accent-green">✓</tspan> Building  •  <tspan class="accent-green">✓</tspan> Scaling  •  <tspan class="accent-green">✓</tspan> Shipping Clean Code</text>
+
+      <!-- Divider -->
+      <line x1="0" y1="74" x2="636" y2="74" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+
+    <!-- Section 2: Technical Architecture & Matrix -->
+    <g transform="translate(504, 290)">
+      <text y="0" class="mono key" fill="#6D28D9">[ TECHNICAL ARCHITECTURE &amp; STACK ]</text>
+      
+      <!-- Tech rows with consistent columns -->
+      <text y="22" class="mono key">&gt; LANGUAGES   :</text>
+      <text x="120" y="22" class="mono val-bold">TypeScript</text>
+      <text x="210" y="22" class="mono faint">·</text>
+      <text x="226" y="22" class="mono val-bold">JavaScript</text>
+      <text x="314" y="22" class="mono faint">·</text>
+      <text x="330" y="22" class="mono val-bold">Go (Golang)</text>
+      <text x="426" y="22" class="mono faint">·</text>
+      <text x="442" y="22" class="mono val-bold">Python</text>
+      <text x="502" y="22" class="mono faint">·</text>
+      <text x="518" y="22" class="mono val">SQL</text>
+
+      <text y="44" class="mono key">&gt; FRONTEND    :</text>
+      <text x="120" y="44" class="mono val-bold">React.js</text>
+      <text x="190" y="44" class="mono faint">·</text>
+      <text x="206" y="44" class="mono val-bold">Next.js (App Router)</text>
+      <text x="372" y="44" class="mono faint">·</text>
+      <text x="388" y="44" class="mono val">Tailwind CSS</text>
+      <text x="488" y="44" class="mono faint">·</text>
+      <text x="504" y="44" class="mono val">HTML5/CSS3</text>
+
+      <text y="66" class="mono key">&gt; BACKEND/API :</text>
+      <text x="120" y="66" class="mono val-bold">Go HTTP / Chi</text>
+      <text x="234" y="66" class="mono faint">·</text>
+      <text x="250" y="66" class="mono val-bold">Node.js</text>
+      <text x="318" y="66" class="mono faint">·</text>
+      <text x="334" y="66" class="mono val">Express.js</text>
+      <text x="420" y="66" class="mono faint">·</text>
+      <text x="436" y="66" class="mono val">REST APIs</text>
+      <text x="518" y="66" class="mono faint">·</text>
+      <text x="534" y="66" class="mono val">WebSockets</text>
+
+      <text y="88" class="mono key">&gt; DATA &amp; AI   :</text>
+      <text x="120" y="88" class="mono val-bold">PostgreSQL</text>
+      <text x="210" y="88" class="mono faint">·</text>
+      <text x="226" y="88" class="mono val">MongoDB</text>
+      <text x="296" y="88" class="mono faint">·</text>
+      <text x="312" y="88" class="mono val">BullMQ</text>
+      <text x="368" y="88" class="mono faint">·</text>
+      <text x="384" y="88" class="mono val-bold">GLM-OCR / Vision AI</text>
+      <text x="546" y="88" class="mono faint">·</text>
+      <text x="562" y="88" class="mono val">AWS S3</text>
+
+      <text y="110" class="mono key">&gt; INFRA/DEVOPS:</text>
+      <text x="120" y="110" class="mono val">Docker</text>
+      <text x="180" y="110" class="mono faint">·</text>
+      <text x="196" y="110" class="mono val">Linux System</text>
+      <text x="300" y="110" class="mono faint">·</text>
+      <text x="316" y="110" class="mono val">Git &amp; GitHub Actions</text>
+      <text x="490" y="110" class="mono faint">·</text>
+      <text x="506" y="110" class="mono val">Postman CI</text>
+
+      <!-- Divider -->
+      <line x1="0" y1="124" x2="636" y2="124" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+
+    <!-- Section 3: Verified Projects & Engineering Builds -->
+    <g transform="translate(504, 434)">
+      <text y="0" class="mono key" fill="#6D28D9">[ VERIFIED BUILDS &amp; SYSTEMS ]</text>
+      
+      <text y="22" class="mono key">&gt; DevBench    :</text>
+      <text x="120" y="22" class="mono val-bold">Developer workbench &amp; syntax diff checker</text>
+      <text x="448" y="22" class="mono tag" fill="#0369A1">devbenchio.vercel.app</text>
+
+      <text y="44" class="mono key">&gt; WindBoard   :</text>
+      <text x="120" y="44" class="mono val-bold">Real-time collaborative canvas &amp; task board</text>
+      <text x="448" y="44" class="mono tag" fill="#0369A1">wind-board.vercel.app</text>
+
+      <!-- Divider -->
+      <line x1="0" y1="58" x2="636" y2="58" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+
+    <!-- Section 4: Live Links & Interactive Terminal Prompt -->
+    <g transform="translate(504, 510)">
+      <!-- Links Row -->
+      <text y="0" class="mono key">&gt; CONNECT     :</text>
+      <text x="120" y="0" class="mono val">boopalan-d3v.vercel.app</text>
+      <text x="296" y="0" class="mono faint">·</text>
+      <text x="312" y="0" class="mono val">github.com/Boopalan-d3v</text>
+      <text x="488" y="0" class="mono faint">·</text>
+      <text x="504" y="0" class="mono val">linkedin: boopalans01</text>
+
+      <!-- Bottom Terminal Prompt Line with Cursor -->
+      <g transform="translate(0, 24)">
+        <text class="mono prompt">boopalan@grassstone:~$ <tspan class="prompt-cmd">echo $CONTACT</tspan> <tspan class="faint">--&gt;</tspan> <tspan class="val-bold">boopalans0112@gmail.com</tspan></text>
+        
+        <!-- Animated Blinking Terminal Block Cursor placed directly after email -->
+        <rect x="466" y="-12" width="8" height="15" fill="#0284C7">
+          <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+    </g>
+  </g>
 </svg>
