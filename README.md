@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Role-AI--Assisted%20Full%20Stack%20Dev-38BDF8?style=flat-square" alt="Role" />
   <a href="https://boopalan-d3v.vercel.app"><img src="https://img.shields.io/badge/Portfolio-boopalan--d3v.vercel.app-22D3EE?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   <a href="https://linkedin.com/in/boopalans01"><img src="https://img.shields.io/badge/LinkedIn-Boopalan%20S-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:boopalans0112@gmail.com"><img src="https://img.shields.io/badge/Email-boopalans0112%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -18,7 +19,7 @@
 
 ### ⚡ About & Focus
 
-Fullstack Software Engineer based in Bangalore, India, specializing in high-throughput backend microservices, real-time web applications, and AI-powered document extraction pipelines.
+AI-Assisted Full Stack Developer based in Bangalore, India, specializing in high-throughput backend microservices, real-time web applications, and AI-powered document extraction pipelines.
 
 - 🏗️ **Core Craft**: Architecting scalable services across React, Next.js, TypeScript, Go, and Node.js.
 - 🧠 **AI & Automation**: Engineering document schema extraction workflows using vision models (GLM-OCR) and asynchronous job orchestration with BullMQ & Redis.

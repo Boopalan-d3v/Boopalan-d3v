@@ -190,6 +190,7 @@ def generate_svg(theme="dark"):
       .val {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: {text_secondary}; font-weight: 500; }}
       .val-bold {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: {text_primary}; font-weight: 700; }}
       .tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 10px; fill: {badge_text}; font-weight: 700; letter-spacing: 0.5px; }}
+      .role-tag {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 9.5px; fill: {badge_text}; font-weight: 700; letter-spacing: 0.5px; }}
       .dot {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; fill: {text_faint}; font-weight: 400; }}
       .faint {{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; fill: {text_faint}; }}
       .accent-green {{ fill: {accent_emerald}; font-weight: 700; }}
@@ -288,33 +289,23 @@ def generate_svg(theme="dark"):
       <text class="mono prompt">boopalan@devos:~$ <tspan class="prompt-cmd">./profile.sh --status --inspect</tspan></text>
     </g>
 
-    <!-- Hero Identity & Badges with Role Rotation -->
+    <!-- Hero Identity & Role Pill: AI-Assisted Full Stack Developer -->
     <g transform="translate(504, 150)">
       <text class="mono head-name">BOOPALAN S</text>
       
-      <!-- Role Badge Pill Container -->
-      <rect x="160" y="-18" width="186" height="24" rx="4" fill="{badge_bg}" stroke="{badge_border}" stroke-width="1"/>
-      
-      <!-- Rotating Role Labels via SMIL -->
-      <g>
-        <text x="253" y="-2" text-anchor="middle" class="mono tag" fill="{accent_sky}">
-          FULL STACK ENGINEER
-          <animate attributeName="opacity" values="1;1;0;0;0;0;1" keyTimes="0;0.30;0.34;0.64;0.68;0.96;1" dur="9s" repeatCount="indefinite"/>
-        </text>
-        <text x="253" y="-2" text-anchor="middle" class="mono tag" fill="{accent_emerald}" opacity="0">
-          BACKEND &amp; GO DEV
-          <animate attributeName="opacity" values="0;0;1;1;0;0;0" keyTimes="0;0.32;0.36;0.64;0.68;0.98;1" dur="9s" repeatCount="indefinite"/>
-        </text>
-        <text x="253" y="-2" text-anchor="middle" class="mono tag" fill="{accent_violet}" opacity="0">
-          AI WORKFLOWS DEV
-          <animate attributeName="opacity" values="0;0;0;0;1;1;0" keyTimes="0;0.64;0.68;0.96;0.98;1;1" dur="9s" repeatCount="indefinite"/>
-        </text>
-      </g>
+      <!-- Role Badge Pill: AI-Assisted Full Stack Developer (Solid, Never Empty) -->
+      <rect x="156" y="-18" width="236" height="24" rx="4" fill="{badge_bg}" stroke="{badge_border}" stroke-width="1"/>
+      <circle cx="170" cy="-6" r="3" fill="{accent_cyan}">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="279" y="-2" text-anchor="middle" class="mono role-tag">AI-ASSISTED FULL STACK DEVELOPER</text>
 
       <!-- Exp Pill -->
-      <rect x="356" y="-18" width="102" height="24" rx="4" fill="{badge_bg}" stroke="{badge_border}" stroke-width="1"/>
-      <circle cx="370" cy="-6" r="3.5" fill="{accent_emerald}"/>
-      <text x="410" y="-2" text-anchor="middle" class="mono tag" fill="{accent_emerald}">2+ YRS EXP</text>
+      <rect x="402" y="-18" width="102" height="24" rx="4" fill="{badge_bg}" stroke="{badge_border}" stroke-width="1"/>
+      <circle cx="416" cy="-6" r="3.5" fill="{accent_emerald}">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="456" y="-2" text-anchor="middle" class="mono tag" fill="{accent_emerald}">2+ YRS EXP</text>
 
       <!-- Mission Statement (No repeated tech keywords) -->
       <text y="22" class="mono headline">Architecting High-Throughput Microservices &amp; Intelligent Workflows</text>
