@@ -18,7 +18,7 @@
 
 ### ⚡ About & Focus
 
-Fullstack Software Engineer at **Grassstone AI** (Bangalore, India) specializing in high-throughput backend microservices, real-time web applications, and AI-powered document extraction pipelines.
+Fullstack Software Engineer based in Bangalore, India, specializing in high-throughput backend microservices, real-time web applications, and AI-powered document extraction pipelines.
 
 - 🏗️ **Core Craft**: Architecting scalable services across React, Next.js, TypeScript, Go, and Node.js.
 - 🧠 **AI & Automation**: Engineering document schema extraction workflows using vision models (GLM-OCR) and asynchronous job orchestration with BullMQ & Redis.
@@ -52,7 +52,7 @@ Fullstack Software Engineer at **Grassstone AI** (Bangalore, India) specializing
 - High-performance infinite canvas whiteboard and visual workspace with fluid vector drawing and task persistence.
 - Built with optimized HTML5 canvas rendering and reactive state management.
 
-#### 🔹 AI Document & OCR Extraction Engine @ Grassstone AI
+#### 🔹 AI Document & OCR Extraction Engine
 - Production data processing pipeline transforming complex multi-page files into structured JSON schemas.
 - Managed asynchronous distributed workers via **BullMQ**, **Node.js**, and **Go**, integrated with vision extraction models.
 
@@ -99,7 +99,7 @@ Fullstack Software Engineer at **Grassstone AI** (Bangalore, India) specializing
 ### 📫 Connect & Terminal Session
 
 ```bash
-boopalan@grassstone:~$ echo "Let's connect and build something extraordinary."
+boopalan@devos:~$ echo "Let's connect and build something extraordinary."
 ```
 
 - 🌐 **Portfolio**: [boopalan-d3v.vercel.app](https://boopalan-d3v.vercel.app)

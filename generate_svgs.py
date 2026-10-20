@@ -223,7 +223,7 @@ def generate_svg(theme="dark"):
     </circle>
 
     <!-- Center Session Title -->
-    <text x="590" y="38" text-anchor="middle" class="mono title-font">boopalan@grassstone-ai: ~/workspace/profile (zsh) — 60fps</text>
+    <text x="590" y="38" text-anchor="middle" class="mono title-font">boopalan@devos: ~/workspace/profile (zsh) — 60fps</text>
 
     <!-- Right Live Telemetry Status -->
     <circle cx="1108" cy="34" r="4.5" fill="{accent_emerald}">
@@ -285,7 +285,7 @@ def generate_svg(theme="dark"):
 
     <!-- Terminal Command Execution -->
     <g transform="translate(504, 120)">
-      <text class="mono prompt">boopalan@grassstone:~$ <tspan class="prompt-cmd">./profile.sh --status --inspect</tspan></text>
+      <text class="mono prompt">boopalan@devos:~$ <tspan class="prompt-cmd">./profile.sh --status --inspect</tspan></text>
     </g>
 
     <!-- Hero Identity & Badges with Role Rotation -->
@@ -322,8 +322,8 @@ def generate_svg(theme="dark"):
 
     <!-- Section 1: Core System Telemetry (Distinct, Non-Overlapping Information) -->
     <g transform="translate(504, 204)">
-      <!-- Row 1: Current Org & Location -->
-      <text y="0" class="mono"><tspan class="key">&gt; CURRENT ORG :</tspan> <tspan class="val-bold">Grassstone AI</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="{accent_emerald}">● ACTIVE / BENGALURU, IN</tspan><tspan class="faint">]</tspan></text>
+      <!-- Row 1: Location & Status -->
+      <text y="0" class="mono"><tspan class="key">&gt; LOCATION    :</tspan> <tspan class="val-bold">Bangalore, Karnataka, India</tspan>  <tspan class="faint">[</tspan><tspan class="tag" fill="{accent_emerald}">● BENGALURU, IN</tspan><tspan class="faint">]</tspan></text>
 
       <!-- Row 2: Education -->
       <text y="20" class="mono"><tspan class="key">&gt; EDUCATION   :</tspan> <tspan class="val">MCA (Master of Computer Applications) · Bharathiar Univ</tspan></text>
@@ -366,7 +366,7 @@ def generate_svg(theme="dark"):
 
       <!-- Bottom Terminal Prompt Line with Seamless Cursor -->
       <g transform="translate(0, 24)">
-        <text class="mono prompt">boopalan@grassstone:~$ <tspan class="prompt-cmd">echo $CONTACT</tspan> <tspan class="faint">--&gt;</tspan> <tspan class="val-bold">boopalans0112@gmail.com</tspan><tspan class="cursor"> █<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></tspan></text>
+        <text class="mono prompt">boopalan@devos:~$ <tspan class="prompt-cmd">echo $CONTACT</tspan> <tspan class="faint">--&gt;</tspan> <tspan class="val-bold">boopalans0112@gmail.com</tspan><tspan class="cursor"> █<animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/></tspan></text>
       </g>
     </g>
   </g>
