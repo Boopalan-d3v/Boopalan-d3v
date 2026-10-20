@@ -19,12 +19,12 @@
 
 ### ⚡ About & Focus
 
-AI-Assisted Full Stack Developer based in Bangalore, India, specializing in high-throughput backend microservices, real-time web applications, and AI-powered document extraction pipelines.
+**AI-Assisted Full Stack Developer** based in **Bangalore, India**, specializing in **high-throughput backend microservices**, **real-time web applications**, and **AI-powered document extraction pipelines**.
 
-- 🏗️ **Core Craft**: Architecting scalable services across React, Next.js, TypeScript, Go, and Node.js.
-- 🧠 **AI & Automation**: Engineering document schema extraction workflows using vision models (GLM-OCR) and asynchronous job orchestration with BullMQ & Redis.
-- 📐 **Architecture**: Prioritizing clean type contracts, relational data integrity (PostgreSQL), and containerized deployments with Docker and GitHub Actions.
-- 🎓 **Education**: MCA (Master of Computer Applications) from Bharathiar University.
+- 🏗️ **Core Craft**: Architecting scalable services across **React**, **Next.js**, **TypeScript**, **Go (Golang)**, and **Node.js**.
+- 🧠 **AI & Automation**: Engineering document schema extraction workflows using vision models (**GLM-OCR**) and asynchronous job orchestration with **BullMQ** & **Redis**.
+- 📐 **Architecture**: Prioritizing clean type contracts, relational data integrity (**PostgreSQL**), and containerized deployments with **Docker** and **GitHub Actions**.
+- 🎓 **Education**: **MCA (Master of Computer Applications)** from **Bharathiar University**.
 
 ---
 
@@ -45,17 +45,17 @@ AI-Assisted Full Stack Developer based in Bangalore, India, specializing in high
 
 #### 🔹 [DevBench](https://devbenchio.vercel.app/) — Developer Utilities & Syntax Diff Suite
 > **Live Application:** [devbenchio.vercel.app](https://devbenchio.vercel.app/)
-- High-efficiency developer workbench featuring real-time, line-by-line syntax diff checking, AST-aware transformations, and live inspection.
-- Engineered for instant client-side execution and responsive dark/light developer ergonomics.
+- High-efficiency developer workbench featuring real-time, line-by-line **syntax diff checking**, **AST-aware transformations**, and live inspection.
+- Engineered with **Next.js** and **Tailwind CSS** for instant **client-side execution** and responsive dark/light developer ergonomics.
 
 #### 🔹 [WindBoard](https://wind-board.vercel.app/) — Real-Time Collaborative Canvas
 > **Repository:** [github.com/Boopalan-d3v/wind-board](https://github.com/Boopalan-d3v/wind-board) · **Live Application:** [wind-board.vercel.app](https://wind-board.vercel.app/)
-- High-performance infinite canvas whiteboard and visual workspace with fluid vector drawing and task persistence.
-- Built with optimized HTML5 canvas rendering and reactive state management.
+- High-performance **infinite canvas whiteboard** and visual workspace with fluid **vector drawing** and task persistence.
+- Built with optimized **HTML5 Canvas API**, **React**, and **reactive state management**.
 
 #### 🔹 AI Document & OCR Extraction Engine
-- Production data processing pipeline transforming complex multi-page files into structured JSON schemas.
-- Managed asynchronous distributed workers via **BullMQ**, **Node.js**, and **Go**, integrated with vision extraction models.
+- Production data processing pipeline transforming complex multi-page files into **structured JSON schemas**.
+- Managed asynchronous distributed workers via **BullMQ**, **Node.js**, and **Go**, integrated with **GLM-OCR vision models**.
 
 ---
 
